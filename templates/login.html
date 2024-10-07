@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Login Page </title>
+    </head>
+    <body >
+      <table style="text-align:center;padding-top:40px;margin-left:200px">
+        
+            <tr>
+                <td><form action="/userlogin"> <button> UserLogin</button> </form></td>
+               
+                
+                <td><form action="/adminlogin"> <button> AdminLogin</button>   </form> </td>
+              
+            
+                <td><form action="/"> <button> Back </button> </form> </td>
+            </tr>
+        </table>
+        <button onclick="goBack()">Go Back</button>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    </body>
+    </html>

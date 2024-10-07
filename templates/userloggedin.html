@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <head>
+        <title>UserLoggedin Page </title>
+    </head>
+    <body style="align:center">
+        <h1 style="align:center;color:red"> Available books in Anna Centurary </h1>
+<table style="align:center">
+    <tr> <th> Book Name </th> <th> Author Name </th> <th> Purchase </th> <tr> 
+        {% for datas in data %}
+        <tr>
+            <td> {{ datas[1] }} </td>
+            <td> {{ datas[2] }} </td>
+            <td>  <form action="buybook/{{ datas[1] }}">  <button> Buy</button> </form> </td>
+        </tr>
+        
+ {% endfor %}
+    </table>
+    <form action="/userlogin">
+        <button> Back </button>
+    </form>
+</body>
+    </html>

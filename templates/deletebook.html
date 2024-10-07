@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Delete Book</title>
+    </head>
+    <body>
+        <h1> Selext any book to delete </h1>
+        <br><br>
+    <table>
+        <tr>
+        <th> Book Name </th>
+        <th> Author Name </th>
+        </tr>
+    {% for data in datas %}
+    <form action="/deleteprogress/{{ data[1] }}" method="POST"> 
+        <tr>
+            <td> {{ data[1] }} </td>
+            <td> {{ data[2] }} </td>
+            <td> <button> Delete </button> </td>
+        </tr>
+    </form>
+    {% endfor %}
+</table>
+</body>
+</html>
